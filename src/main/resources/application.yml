@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: vault, git
+  cloud:
+    config:
+      server:
+        vault:
+          order: 1
+        git:
+          order: 2
+          uri: https://github.com/markuskappel/config-sample
